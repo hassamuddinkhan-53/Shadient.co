@@ -1,0 +1,1524 @@
+@font-face {
+    font-family: Agrandir;
+    src: url('./font/Agrandir-TextBold.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Agrandir", sans-serif;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+ 
+
+
+.container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(255, 255, 255, 1) !important;
+    border-radius: 10px;
+}
+
+/* section-header */
+
+header {
+    background-color: rgba(17, 15, 15, 1);
+    
+}
+
+header .nav {
+    z-index: 6;
+    position: relative; 
+}
+header .nav .nav-bar .slidebar {
+    top: 0;
+    right: 0;
+    height:100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    z-index: 999;
+    position: fixed;
+    background-color: #000000;
+    transition: 20s ease;
+}
+
+
+header .nav .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFFFFF;
+    padding: 23px 0px;
+}
+header .nav .nav-links .hamburger-icon {
+    display: none;
+    right: 0;
+}
+header .nav .nav-links .nav-logo {
+    min-height: 42px;
+}
+
+header .nav .nav-links ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 25px;
+}
+
+header .nav .nav-links ul li {
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+}
+
+header .nav a {
+    color: #FFFFFF;
+}
+
+/* nav-button */
+header .nav .nav-links ul .drop-down .drop-down1 {
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+header .nav .nav-links ul .drop-down {
+    position: relative;
+}
+
+header .nav .nav-links ul .drop-down .drop-content {
+    position: absolute;
+    display: none;
+    background-color: transparent;
+    z-index: 3;
+
+}
+
+header .nav .nav-links ul .drop-down .drop-content a {
+    display: block;
+    margin-top: 5px;
+    color: #FFA800;
+    border-radius: 15px;
+    padding: 7px;
+
+}
+
+header .nav .nav-links ul .drop-down:hover .drop-content {
+    display: block;
+
+}
+
+header .nav .nav-links .nav-link01 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFA800;
+    background-color: transparent;
+    border: 1px solid #FFA800;
+    padding: 10px 24px;
+    border-radius: 20px;
+}
+
+/* hero-section */
+.hero {
+    position: relative;
+
+    background-color: rgba(17, 15, 15, 1);
+    z-index: 5;
+    background-size: cover;
+    background-image: url("vector.png");
+    overflow: hidden;
+
+}
+
+
+.hero::before {
+    content: "";
+    position: absolute;
+    left: -270px;
+    bottom: 0px;
+    width: 796.96px;
+    height: 570.6px;
+    background-image: url('vector1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    right: -340px;
+    width: 796.96px;
+    top: -200px;
+    rotate: -20deg;
+    height: 570.6px;
+    background-image: url('vector2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+.hero .inner {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.hero .inner .hero-text {
+    max-width: 523px;
+    padding: 140px 0;
+    color: rgba(255, 255, 255, 1);
+    align-items: start;
+    font-weight: 400;
+}
+
+.hero .inner .hero-text .text-high {
+    background: linear-gradient(rgba(185, 251, 172, 1), rgba(92, 225, 66, 1), rgba(166, 255, 149, 1));
+    -webkit-background-clip: text !important;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero .inner .hero-text h1 {
+    font-size: 96px;
+    line-height: 80px;
+
+}
+
+
+.hero .inner .hero-text p {
+    font-size: 15px;
+    line-height: 24px;
+    color: rgba(166, 255, 149, 0.6);
+    margin-bottom: 32px;
+}
+
+.hero .inner .hero-text .hero-btn {
+
+    display: flex;
+    gap: 16px;
+}
+
+.hero .inner .hero-text .hero-btn input {
+    background-color: transparent;
+    border-color: rgba(161, 174, 191, 1);
+    border-radius: 30px;
+    border: 2px solid rgba(161, 174, 191, 1);
+    padding: 16px;
+    width: 320px;
+    color: rgba(161, 174, 191, 1);
+}
+
+.hero .inner .hero-text .hero-btn .btn-yellow {
+    color: #000000;
+    background-color: rgba(255, 168, 0, 1);
+    border-radius: 30px;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+}
+
+/* section .Marqee */
+
+.Marqee {
+    background-color: #000000;
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+
+.Marqee .inner .simple-text {
+    display: flex;
+    margin-bottom: 64px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Marqee .inner .simple-text .h2-text {
+    color: rgba(255, 255, 255, 1);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    width: 50%;
+}
+
+.Marqee .inner .simple-text .h2-text h2 {
+    width: 100%;
+    object-fit: contain;
+}
+
+.Marqee .inner .simple-text .p-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    width: 50%;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-100%)
+    }
+
+    50% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateX(100%)
+    }
+
+    0% {
+        transform: translateX(-100%)
+    }
+
+}
+
+@keyframes slidesl {
+    0% {
+        transform: translateX(-100%)
+    }
+
+    50% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateX(100%)
+    }
+
+    0% {
+        transform: translateX(-100%)
+    }
+
+}
+
+.Marqee .inner .logos {
+    padding: 16px 24px;
+    position: relative;
+}
+
+.Marqee .inner .logos .logo-slides {
+    display: inline-block;
+    white-space: nowrap;
+    animation: 12s slide linear infinite forwards;
+}
+
+.Marqee .inner .logos .logo-slidesl {
+    white-space: nowrap;
+    display: inline-block;
+    animation: 12s slidesl linear infinite;
+}
+
+
+.Marqee .inner .logos .logo-slides img {
+    border: 1px solid rgba(161, 174, 191, 1);
+    border-radius: 10px;
+    padding: 16px 24px;
+    align-items: center;
+    margin: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+    line-height: 24px;
+}
+
+.Marqee .inner .logos .logo-slidesl img {
+
+    border: 1px solid rgba(161, 174, 191, 1);
+    border-radius: 10px;
+    padding: 16px 24px;
+    align-items: center;
+    margin: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+    line-height: 24px;
+
+}
+
+/* section-offer-cards */
+
+.offer {
+    background-color: rgba(17, 15, 15, 1);
+    padding: 80px 0;
+}
+
+.offer .inner .offer-text {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 40px;
+
+}
+
+.offer .inner .offer-text h3 {
+    width: 100%;
+}
+
+.offer .inner .offer-text .h3-holder {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 56px;
+    color: rgba(255, 255, 255, 1);
+    width: 100%;
+}
+
+.offer .inner .offer-text .p-holder {
+    width: 50%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.offer .inner .offer-cards .cards-1 {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 32px;
+    row-gap: 40px;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.offer .inner .offer-cards .cards-1 .box1 {
+    border: 1px solid rgba(161, 174, 191, 1);
+    border-radius: 4px;
+    padding: 40px 20px;
+    width: calc(33.33% - 21.33px);
+}
+
+.offer .inner .offer-cards .cards-1 .box1 h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+}
+
+.offer .inner .offer-cards .cards-1 .box1 p {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.choosen {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.choosen .inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 120px 0;
+
+}
+
+.choosen .inner .img-holder {
+    max-width: 50%;
+}
+
+.choosen .inner .img-holder img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.choosen .inner .text-holder {
+    width: 50%;
+}
+
+.choosen .inner .text-holder h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+}
+
+.choosen .inner .text-holder p {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 16px 0 32px 0;
+}
+
+.choosen .inner .text-holder a {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 168, 0, 1);
+    background-color: transparent;
+    border: 1px solid rgba(255, 168, 0, 1);
+    border-radius: 50px;
+    padding: 12px 24px;
+}
+
+
+/* section-work */
+
+.work {
+    background-color: rgba(17, 15, 15, 1);
+    padding: 80px 0;
+}
+
+.work .inner {
+    display: flex;
+    margin: 0 auto;
+    gap: 26px;
+    align-items: baseline;
+}
+
+.work .inner .text {
+    width: calc(33% - 26px);
+    text-align: start;
+}
+
+.work .inner .text h2 {
+    font-weight: 700;
+    font-size: 40px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 26px;
+}
+
+.work .inner .text p {
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 50px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 26px;
+}
+
+.work .inner .text a {
+    padding: 12px 24px;
+    color: rgba(255, 168, 0, 1);
+    border: 1px solid rgba(255, 168, 0, 1);
+    background-color: transparent;
+    border-radius: 50px;
+    margin-bottom: 26px;
+    display: inline-block;
+}
+
+.work .inner .website-holder {
+    max-width: calc(70% - 26px);
+    display: flex;
+    width: 100%;
+    column-gap: 26px;
+
+}
+
+.work .inner .website {
+    row-gap: 32px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 26px;
+    width: calc(90% - 26PX);
+}
+
+.work .inner .website .box1 {
+    padding: 24px;
+    border: 1px solid rgba(161, 174, 191, 1);
+    width: 100%;
+}
+
+.work .inner .website span {
+    background-color: rgba(255, 168, 0, 1);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 8px 4px;
+    border-radius: 4px;
+    color: rgba(26, 54, 93, 1);
+    text-transform: uppercase;
+}
+
+.work .inner .website h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+    margin: 20px 0;
+
+}
+
+.work .inner .website a {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(114, 128, 149, 1);
+    margin-bottom: 20px;
+}
+
+.work .inner .website .overlay {
+    width: 100%;
+    height: 0;
+    transition: height 3s ease;
+    transition-duration: 0.7s;
+    transition-delay: 0s;
+    transition-property: height;
+    transition-behavior: normal;
+    transition-timing-function: ease;
+    overflow: hidden;
+}
+
+.work .inner .website .box1:hover .img1 {
+    width: 100%;
+    display: block;
+    transition: height 3s ease;
+    transition-behavior: normal;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+    transition-delay: 2s;
+    transition-property: height;
+    overflow: hidden;
+
+}
+
+.work .inner .website .box1:hover .overlay {
+    height: 142px;
+    margin-bottom: 20px;
+}
+
+.work .inner .website .box1 .overlay img {
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: none;
+}
+
+
+/* section-customerreviwes */
+
+.customer {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.customer .inner {
+    padding: 80px 0;
+    color: rgba(255, 255, 255, 1);
+}
+
+.customer .inner .icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 56px;
+}
+
+.customer .inner .icon .btn {
+    gap: 20px;
+    display: flex;
+}
+
+.customer .inner .icon .btn button {
+    background-color: rgba(15, 15, 15, 1);
+    border: 1px solid rgba(255, 168, 0, 1);
+    padding: 20px;
+    border-radius: 4px;
+    gap: 24px;
+}
+
+.customer .inner .logo-slides {
+    border: 1px solid rgba(161, 174, 191, 1);
+    background-color: rgba(15, 15, 15, 1);
+    max-width: 307px;
+    padding: 24px;
+}
+
+.customer .inner .swiper .logo-slides .profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.customer .inner .swiper .logo-slides .profile img {
+    border: none;
+
+}
+
+
+/* section-idea */
+.idea {
+    background-color: rgba(17, 15, 15, 1);
+}
+
+.idea .inner {
+    text-align: center;
+    justify-content: center;
+    padding: 80px 0;
+    flex-direction: column;
+    background-color: rgba(255, 178, 25, 1);
+
+}
+
+.idea .inner .description h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 56px;
+
+}
+
+.idea .inner .description p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.6);
+    max-width: 511px;
+    margin: 0 auto;
+    margin-top: 16px;
+}
+
+.idea .inner .send {
+    margin-top: 32px;
+}
+
+.idea .inner .send input:focus-visible {
+    outline: none;
+}
+
+.idea .inner .send input {
+    background-color: rgba(251, 253, 254, 1);
+    border-radius: 50px;
+    border: 2px solid rgba(161, 174, 191, 1);
+    max-width: 320px;
+    width: 100%;
+    padding: 16px;
+    border-radius: 43px;
+    margin-right: 16px;
+
+
+}
+
+.idea .inner .send a {
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    font-weight: 700;
+    padding: 16px 24px;
+    border-radius: 50px;
+}
+
+.idea .top {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    background-color: transparent;
+    position: fixed;
+    bottom: 21px;
+    right: 30px;
+    bottom: 36px;
+    z-index: 999; 
+}
+
+.top a {
+    padding: 10px 20px;
+    font-size: 10px;
+    font-weight: 700;
+    color: #FFA800;
+    border: 1px solid #FFA800;
+    border-radius: 20px;
+    background-color: black;
+}
+
+/* section-footer */
+
+footer {
+    background-color: rgba(0, 0, 0, 1);
+
+}
+
+footer .inner {
+    padding: 80px 0 40px 0;
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+footer .inner a {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+footer .inner .about {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+footer .inner .about .created {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 80px;
+}
+
+footer .inner .about .card01 {
+    display: flex;
+    justify-content: space-between;
+}
+footer .inner .about .card01 .box-size{
+    max-width: 127px;
+    width: 100%;
+}
+
+footer .inner .about .card01 .colum1 h5 {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 24px;
+
+}
+
+footer .inner .about .card01 .colum1 p {
+    margin-bottom: 24px;
+}
+
+
+footer .inner .about .card01 .colum1 .email {
+    border-radius: 50px;
+    border: 1.62px solid rgba(161, 174, 191, 1);
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 1);
+    color: #FFFFFF;
+    width: 100%;
+    margin-top: 24px;
+}
+
+footer .inner .about .card01 .colum1 .email input {
+    color: #FFFFFF;
+}
+
+footer .inner .about .card01 .colum1 .email input:focus-visible {
+    outline: none;
+}
+footer .inner a img {
+        max-height: 40px;
+}
+
+@media (max-width: 1399px) {
+    header .nav .nav-bar {
+        padding: 15px 0;
+    }
+
+    header .nav .nav-links ul li {
+        font-size: 15px;
+    }
+
+    header .nav .nav-links ul .drop-down .drop-down1 {
+        font-size: 15px;
+    }
+
+    header .nav .nav-links ul .drop-down .drop-content a {
+        padding: 5px;
+    }
+
+    header .nav .nav-links .nav-link01 {
+        padding: 8px 16px;
+        font-size: 11px;
+    }
+
+    .hero .inner .hero-text {
+        max-width: 470px;
+    }
+
+    .hero .inner .hero-text p {
+        margin-bottom: 20px;
+    }
+
+    .hero .inner .hero-text .hero-btn {
+        gap: 12px;
+    }
+
+    .hero .inner .hero-text .hero-btn input {
+        border-radius: 25px;
+        padding: 14px;
+        width: 300px;
+    }
+
+    .hero .inner .hero-text .hero-btn .btn-yellow {
+        font-size: 13px;
+        padding: 10px 20px;
+    }
+
+    .Marqee {
+        padding: 75px 0;
+    }
+
+    .Marqee .inner .simple-text {
+        margin-bottom: 50px;
+    }
+
+    .Marqee .inner .simple-text h2 {
+        font-size: 35px;
+    }
+
+    .Marqee .inner .simple-text .p-text {
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .Marqee .inner .logos .logo-slides img {
+        border-radius: 8px;
+        padding: 11px 22px;
+    }
+
+    .Marqee .inner .logos .logo-slidesl img {
+        border-radius: 8px;
+        padding: 11px 22px;
+    }
+
+    /* .Marqee .inner .logos .logo-slidesl {
+        animation: 13s slidesl infinite;
+    } */
+
+    .offer {
+        padding: 75px 0;
+    }
+
+    .offer .inner .offer-cards .cards-1 {
+        max-width: 92%;
+    }
+
+    .offer .inner .offer-text h3 {
+        font-size: 35px;
+    }
+
+    .offer .inner .offer-text p {
+        font-size: 14px;
+    }
+
+    .offer .inner .offer-cards .cards-1 .box1 {
+        padding: 24px 12px;
+    }
+
+    .choosen .inner {
+        padding: 100px 0;
+        gap: 14px;
+    }
+
+    .choosen .inner .text {
+        width: calc(40% - 14px);
+    }
+
+    .choosen .inner .text h2 {
+        font-size: 35px;
+    }
+
+    .choosen .inner .text p {
+        font-size: 15px;
+        margin: 12px 0 25px 0;
+    }
+
+    .choosen .inner .text a {
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+
+    /* section-work */
+    .work {
+        padding: 60px 0;
+    }
+
+
+    .work .inner .text h2 {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    .work .inner .text p {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .work .inner .text a {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .work .inner .website .box1 {
+        padding: 20px;
+    }
+
+    .work .inner .website h1 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .work .inner .website a {
+        font-size: 15px;
+    }
+
+    .customer .inner {
+        padding: 65px 0;
+    }
+
+    .customer .inner .icon {
+        margin-bottom: 50px;
+    }
+
+    .customer .inner .icon span {
+        font-size: 0.9rem;
+    }
+
+    .customer .inner .icon .btn button {
+        padding: 10px;
+    }
+
+    .customer .inner .icon .btn {
+        gap: 15px;
+    }
+
+    .customer .inner .logo-slides {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .customer .inner {
+        padding: 60px 0;
+    }
+
+    .idea .inner {
+        padding: 75px 0;
+    }
+
+    .idea .inner .description h2 {
+        font-size: 38px;
+    }
+
+    .idea .inner .description p {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .idea .inner .send {
+        margin-top: 25px;
+    }
+
+    .idea .inner .send input {
+        max-width: 300px;
+        padding: 12px;
+        margin-right: 10px;
+    }
+
+    .idea .inner .send a {
+        padding: 13px 22px;
+        font-size: 13px;
+    }
+    .inner .about .card01 .colum1 h5 {
+        font-size: 15px;
+        margin-bottom: 24px
+    }
+
+    .inner .about .card01 .colum1 p {
+        margin-bottom: 20px;
+    }
+
+    .inner .about .card01 .colum1 .email {
+        padding: 13px;
+        max-width: 218px;
+    }
+
+    .inner .about .created {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 1199px) {
+    header .nav .nav-links .nav-link01 {
+        padding: 7px 15px;
+        font-size: 10px;
+    }
+
+    header .nav .nav-links ul li {
+        font-size: 14px;
+    }
+
+    .hero .inner .hero-text h1 {
+        font-size: 90px;
+        line-height: 79px;
+    }
+
+    .hero .inner .hero-text .hero-btn input {
+        width: 285px;
+    }
+
+    .work .inner .text h2 {
+        font-size: 33px;
+        margin-bottom: 13px;
+    }
+
+    .work .inner .website h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .work .inner .website span {
+        font-size: 8px;
+        font-weight: 600;
+        padding: 5px 4px
+    }
+
+    .customer .inner .icon .btn button {
+        padding: 7px;
+    }
+
+    .customer .inner .icon {
+        margin-bottom: 40px;
+    }
+
+    .idea .inner .description h2 {
+        font-size: 34px;
+    }
+
+    .idea .inner .description p {
+        line-height: 1;
+        font-size: 12px;
+        margin-top: 6px;
+    }
+
+    .idea .inner .send input {
+        max-width: 280px;
+        padding: 11px;
+        margin-right: 5px;
+    }
+
+    .idea .inner .send a {
+        padding: 13px 19px;
+        font-size: 12px;
+    }
+
+    .inner .about .card01 .colum1 p {
+        margin-bottom: 15px;
+        font-size: 0.95rem;
+    }
+    .inner .about .card01 .colum1 .email {
+        padding: 10px;
+        max-width: 218px;
+    }
+
+    .inner .about .created {
+        font-size: 13px;
+    }
+
+    .top a {
+        padding: 7px 16px;
+        font-size: 9px;
+        font-weight: 700;
+    }
+
+    .work .inner .text {
+        width: calc(100% - 26px);
+    }
+
+    .work .inner {
+        flex-direction: column;
+    }
+
+    .customer .inner .icon .btn {
+        gap: 8px;
+    }
+
+}
+
+@media (max-width: 991px) {
+    header .nav .nav-bar {
+        padding: 20px 0 12px;
+    }
+
+
+    header .nav .nav-links ul .drop-down .drop-down1 {
+        font-size: 12px;
+    }
+
+    header .nav .nav-links ul li {
+        font-size: 12px;
+    }
+
+    .hero .inner .hero-text h1 {
+        font-size: 80px;
+        line-height: 70px;
+    }
+
+    .hero .inner .hero-text p {
+        margin-bottom: 13px;
+        font-size: 13px;
+    }
+
+    .hero .inner .hero-text .hero-btn input {
+        width: 250px;
+        padding: 12px;
+    }
+
+    .hero .inner .hero-text .hero-btn .btn-yellow {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    .hero .inner .hero-text {
+        max-width: 380px;
+        padding: 200px 0;
+    }
+
+    .Marqee .inner .simple-text {
+        margin-bottom: 0px;
+    }
+
+    .inner .about .card01 {
+        display: flex;
+        gap: 100px;
+        flex-wrap: wrap-reverse;
+    }
+
+    .inner .about .logo {
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .work .inner .website h1 {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 767px) {
+    
+    .Marqee .inner .simple-text .p-text {
+        margin: 20px 0;
+    }
+
+    .Marqee .inner .simple-text .h2-text {
+        width: 100%;
+    }
+
+    .Marqee .inner .simple-text .p-text {
+        width: 100%;
+    }
+
+    .Marqee .inner .simple-text {
+        align-items: center;
+    }
+
+    .Marqee .inner .logos .logo-slides {
+        animation: 13s slide linear infinite forwards;
+    }
+
+    .Marqee .inner .logos .logo-slidesl {
+        animation: 13s slidesl linear infinite forwards;
+    }
+
+    .offer {
+        padding: 65px 0;
+    }
+
+    .offer .inner .offer-text .p-holder {
+        width: 70%;
+        line-height: 14px;
+    }
+
+    .offer .inner .offer-cards .cards-1 .box1 {
+        width: calc(50% - 10.33px);
+    }
+
+    .offer .inner .offer-cards .cards-1 {
+        column-gap: 15px;
+        row-gap: 20px;
+    }
+
+    .choosen .inner .text-holder h2 {
+        font-size: 35px;
+    }
+
+    .choosen .inner .text-holder p {
+        font-size: 12px;
+        margin: 8px 0 25px 0;
+    }
+
+    .choosen .inner .text-holder a {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+    .work {
+        padding: 65px 0;
+    }
+
+    .idea .inner .send a {
+        font-size: 11px;
+    }
+
+    .idea .inner .send input {
+        max-width: 240px;
+        padding: 9px;
+    }
+
+    .inner .about .card01 {
+        display: flex;
+        gap: 50px;
+        justify-content: start;
+        flex-wrap: wrap-reverse;
+    }
+
+}
+
+@media (max-width: 575px) {
+    header .nav .nav-bar {
+        padding: 15px 0;
+    }
+    header .nav .nav-bar .nav-logo img {
+    max-width: 125px;
+    }
+    .hero .inner .hero-text h1 {
+        font-size: 50px;
+        line-height: 48px;
+    }
+
+    .hero .inner .hero-text p {
+        margin: 15px 0;
+        font-size: 11px;
+    }
+
+    .hero .inner .hero-text .hero-btn input {
+        width: 150px;
+        padding: 7px;
+    }
+
+    .hero .inner .hero-text .hero-btn .btn-yellow {
+        font-size: 11px;
+        padding: 6px 7px;
+    }
+
+    .Marqee .inner .simple-text h2 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .Marqee .inner .simple-text .p-text {
+        font-weight: 400;
+        font-size: 12px;
+    }
+
+    .Marqee .inner .logos .logo-slides img {
+        padding: 4px 6px;
+    }
+
+    .Marqee .inner .logos .logo-slidesl img {
+        padding: 4px 6px;
+    }
+    .Marqee {
+        padding: 50px 0;
+    }
+    .Marqee .inner .logos {
+        padding: 0;
+    }
+    .offer{
+        padding: 50px 0;
+    }
+    .offer .inner .offer-text h3 {
+        font-size: 30px;
+    }
+
+    .offer .inner .offer-text {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .offer .inner .offer-cards .cards-1 {
+        max-width: 100%;
+        margin: 0;
+    }
+    .offer .inner .offer-cards .cards-1 .box1 {
+        width: calc(100%);
+    }
+
+    .offer .inner .offer-cards .cards-1 .box1 h2 {
+        font-size: 20px;
+    }
+
+    .offer .inner .offer-text h3 {
+        font-size: 24px;
+    }
+
+    .choosen .inner .text-holder {
+        width: 90%;
+    }
+
+    .choosen .inner .img-holder {
+        width: 90%;
+    }
+
+    .choosen .inner .text-holder a {
+        font-size: 9px;
+        padding: 7px 15px;
+    }
+
+    .choosen .inner .text-holder p {
+        font-size: 12px;
+        margin: 8px 0 15px 0;
+    }
+
+    .work .inner {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .work .inner .text {
+        width: calc(90% - 26px);
+    }
+
+    .work .inner .website{
+        width: calc(100%);
+        gap: 26px;
+    }
+
+    .work .inner .website span {
+        font-size: 10px;
+        padding: 5px 1px;
+    }
+
+    .work .inner .website h1 {
+        font-size: 15px;
+        margin-bottom: 2px;
+    }
+
+    .idea .inner .send input {
+        max-width: 222px;
+        padding: 7px;
+    }
+
+    .idea .inner .send a {
+        padding: 10px 3px;
+        font-size: 10px;
+        margin: 0 auto;
+        margin-top: 20px;
+        max-width: 85px;
+        display: block;
+
+    }
+
+    header .nav .nav-bar .hideslider {
+        display: none;
+    }
+    header .nav .nav-links .hamburger-icon {
+        background-color: transparent;
+        padding: 2px 2px solid #FFA800;
+        border: none;
+        display: block;
+        color: #FFA800;
+    }
+
+    .offer .inner .offer-text {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        align-items: start;
+        text-align: start;
+    }
+
+    .hero .inner .hero-text p {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    .choosen .inner .text-holder h2 {
+        font-size: 25px;
+    }
+
+    .idea .inner .send a {}
+
+    .idea .inner .description h2 {
+        font-size: 27px;
+        line-height: 32px;
+    }
+
+    .Marqee .inner .logos .logo-slidesl {
+        animation: 15s slide linear infinite forwards;
+    }
+
+    .Marqee .inner .logos .logo-slides {
+        animation: 15s slide linear infinite forwards;
+    }
+
+    .customer .inner .icon .btn {
+        margin-top: 20px;
+    }
+
+    .customer .inner .icon {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .customer .inner .icon .btn {
+        display: flex;
+        justify-content: space-between;
+        max-width: 100%;
+    }
+
+    .work .inner .website {
+        grid-template-columns: auto;
+    }
+    footer .inner a img {
+        max-height: 28px;
+    }  
+    footer .inner .about .card01 .colum1 .email {
+    padding: 12px;
+    }    
+    .choosen .inner .img-holder img {
+    margin: 0 45px;
+    }
+    .choosen .inner {
+    justify-content: flex-start; 
+    padding: 50px 0;
+    }
+    .work {
+        padding: 50px 0;
+    }
+    .customer .inner {
+        padding: 50px 0;
+    }        
+    footer .inner {
+    padding: 50px 0 40px 0;
+    }
+    .idea .inner .description p {
+        font-size: 10px;
+    }
+    footer .inner .about .created {
+    text-align: start;
+    }
+    header .nav .nav-bar .slidebar{
+        
+    }
+}
+
+
