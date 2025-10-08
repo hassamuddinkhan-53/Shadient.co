@@ -33,6 +33,7 @@ a {
     text-decoration: none;
 }
 
+a,
 a:hover {
     color: rgba(255, 255, 255, 1) !important;
     border-radius: 10px;
@@ -78,6 +79,11 @@ header .nav .nav-links .hamburger-icon {
 }
 header .nav .nav-links .nav-logo {
     min-height: 42px;
+}
+
+header .nav .nav-links{
+    position:absolute;
+    right: 0;
 }
 
 header .nav .nav-links ul {
